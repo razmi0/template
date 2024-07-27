@@ -26,10 +26,14 @@ body {
   font-size: 2rem;
 }
 
+.vertical {
+  flex-direction: column;
+}
+
 .wrapper {
   display: flex;
   width: 75%;
-  height: 100vh;
+  min-height: 100vh;
   justify-items: center;
   align-items: center;
 
@@ -37,6 +41,18 @@ body {
     max-height: 75vh;
     height: 100px;
     flex-grow: 1;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .anim-2 {
+      max-width: 45%;
+      width: 250px;
+      height: 200px;
+    }
   }
 }
 
