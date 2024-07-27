@@ -11,5 +11,6 @@ export const itemsData = items.map((item, i) => {
     end: item.getBoundingClientRect().right,
     color: colors[i],
     element: item,
+    done: false,
   };
 });
